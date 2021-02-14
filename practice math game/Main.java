@@ -29,8 +29,6 @@ public class Main {
 
         for (int i = 0; i < vezesJogadas; i++) {
 
-            System.out.println("Digite o resultado do calculo:");
-
             List<String> strList = Arrays.asList(operacao);
             Collections.shuffle(strList);
             operacao = strList.toArray(new String[strList.size()]);
@@ -43,7 +41,7 @@ public class Main {
                 // System.out.println("catchau");
                 clearConsole();
             }
-
+            System.out.println("Digite o resultado do calculo:");
             System.out.print(randomNum1 + " " + operacao[0] + " " + randomNum2 + "=");
 
             Scanner scanner = new Scanner(System.in);
